@@ -8,3 +8,5 @@ words = text.split()
 print(f"Word count: {len(words)}")
 # Print the number of unique words by converting the list to a set
 print(f"Unique words: {len(set(words))}")
+# Print the total characters, including spaces
+print(f"Character count: {len(text)}")
