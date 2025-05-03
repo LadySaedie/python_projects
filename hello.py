@@ -1,2 +1,2 @@
 message = "Hello, World!"
-message
+print (message)
