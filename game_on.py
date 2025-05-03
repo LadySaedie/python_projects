@@ -4,12 +4,15 @@ fname = input("What’s your first name? ")
 # Print a personalised greeting
 print(f"Hello, {fname}! Welcome to Game On!")
 
-# Start a mini adventure
+# Start the adventure by describing the scene and asking for a choice
 print(f"{fname}, you’re in a forest. Do you go left or right?")
+
+# Store the user's choice ('left' or 'right') in the variable 'choice'
 choice = input("Type 'left' or 'right': ")
 
-# Respond based on the choice
-if choice == "left":
-    print("You find a treasure chest!")
+if choice.lower() == "left":
+    print(f"{fname}! You've found the buried treasure chest!")
+elif choice.lower() == "right":
+    print(f"{fname}! RUN! A wild wolf is about to eat you!")
 else:
-    print("A wild wolf appears and eats you!")
+    print(f"{fname}, you wrote: '{choice}'. Please type only 'left' or 'right'. Nothing else")
