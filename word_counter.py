@@ -6,3 +6,5 @@ words = text.split()
 
 # Print the number of words in the list, using an f-string to format the output nicely
 print(f"Word count: {len(words)}")
+# Print the number of unique words by converting the list to a set
+print(f"Unique words: {len(set(words))}")
