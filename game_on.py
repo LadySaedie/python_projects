@@ -9,8 +9,10 @@ if choice.lower() == "left":
    choice2 = input("Type 'open' or 'run': ")
    if choice2.lower() == "open":
        print(f"{fname}, it’s full of gold!")
+   elif choice2.lower() == "run":
+       print(f"{fname}, you ran away safely!")
    else:
-       print(f"{fname}, you escaped safely!")
+       print(f"{fname}, you wrote: '{choice2}'. Please type only 'open' or 'run'. Nothing else")
 elif choice.lower() == "right":
     print(f"{fname}! RUN! A wild wolf is about to eat you!")
 else:
